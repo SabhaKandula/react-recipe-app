@@ -17,7 +17,7 @@ class App extends Component {
           <Navbar />
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/recipes" component={Recipes} />
+            <Route path="/recipes" exact component={Recipes} />
             <Route path="/recipes/:id" component={SingleRecipe} />
             <Route component={Default} />
           </Switch>
