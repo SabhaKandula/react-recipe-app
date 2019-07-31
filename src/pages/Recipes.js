@@ -26,7 +26,7 @@ export default class Recipes extends Component {
       if (jsonData.recipes.length === 0) {
         this.setState({
           error:
-            "sorry but your search didn't return any recipes. Please try again or press search icon for most popular recipes"
+            "sorry but your search didnot return any recipes. Please try again or press search icon for most popular recipes"
         });
       } else {
         this.setState({
