@@ -47,14 +47,14 @@ export default class Recipes extends Component {
     });
   };
   handleSubmit = e => {
-    const { baseUrl, query, search } = this.state;
     e.preventDefault();
+    const { baseUrl, query, search } = this.state;
     this.setState(
       {
         url: `${baseUrl}${query}${search}`,
         search: ""
       },
-      () => this.getRecipes() //Call back after setting state with parameters
+      () => this.getRecipes()
     );
   };
   render() {
